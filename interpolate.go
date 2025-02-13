@@ -1,7 +1,7 @@
 package pipeline
 
 import (
-	"github.com/buildkite/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/ordered"
 	"github.com/buildkite/interpolate"
 )
 

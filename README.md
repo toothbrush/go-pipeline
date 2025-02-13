@@ -1,7 +1,7 @@
 # go-pipeline
 
 [![Build status](https://badge.buildkite.com/1fad7fb9610283e4955ea4ec4c88faca52162b637fea61821e.svg)](https://buildkite.com/buildkite/go-pipeline)
-[![Go Reference](https://pkg.go.dev/badge/github.com/buildkite/go-pipeline.svg)](https://pkg.go.dev/github.com/buildkite/go-pipeline)
+[![Go Reference](https://pkg.go.dev/badge/github.com/toothbrush/go-pipeline.svg)](https://pkg.go.dev/github.com/toothbrush/go-pipeline)
 
 `go-pipeline` is a Go library used for building and modifying Buildkite pipelines in golang. It's used internally by the [Buildkite Agent](https://github.com/buildkite/agent) to inspect and sign pipelines prior to uploading them, but is also useful for building tools that generate pipelines.
 
@@ -10,7 +10,7 @@
 To install, run
 
 ```
-go get -u github.com/buildkite/go-pipeline
+go get -u github.com/toothbrush/go-pipeline
 ```
 
 This will add go-pipeline to your go.mod file, and make it available for use in your project.

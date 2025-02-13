@@ -3,9 +3,9 @@ package pipeline
 import (
 	"fmt"
 
-	"github.com/buildkite/go-pipeline/internal/env"
-	"github.com/buildkite/go-pipeline/ordered"
-	"github.com/buildkite/go-pipeline/warning"
+	"github.com/toothbrush/go-pipeline/internal/env"
+	"github.com/toothbrush/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/warning"
 	"github.com/buildkite/interpolate"
 )
 

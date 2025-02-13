@@ -3,8 +3,8 @@ package pipeline
 import (
 	"testing"
 
-	"github.com/buildkite/go-pipeline/internal/env"
-	"github.com/buildkite/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/internal/env"
+	"github.com/toothbrush/go-pipeline/ordered"
 	"gotest.tools/v3/assert"
 )
 

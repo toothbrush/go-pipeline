@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/buildkite/go-pipeline"
+	"github.com/toothbrush/go-pipeline"
 )
 
 var errSigningRefusedUnknownStepType = errors.New("refusing to sign pipeline containing a step of unknown type, because the pipeline could be incorrectly parsed - please contact support")

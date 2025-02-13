@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/buildkite/go-pipeline"
+	"github.com/toothbrush/go-pipeline"
 	"github.com/gowebpki/jcs"
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"

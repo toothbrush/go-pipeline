@@ -3,7 +3,7 @@ package pipeline
 import (
 	"encoding/json"
 
-	"github.com/buildkite/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/ordered"
 )
 
 // Compile-time check that *UnknownStep satisfies necessary interfaces

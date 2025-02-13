@@ -1,7 +1,7 @@
 package pipeline
 
 import (
-	"github.com/buildkite/go-pipeline/warning"
+	"github.com/toothbrush/go-pipeline/warning"
 )
 
 // In the buildkite pipeline yaml, some step types (broadly, wait steps, input steps and block steps) can be represented

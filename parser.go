@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/buildkite/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/ordered"
 	"gopkg.in/yaml.v3"
 )
 

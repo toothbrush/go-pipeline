@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/buildkite/go-pipeline/ordered"
-	"github.com/buildkite/go-pipeline/warning"
+	"github.com/toothbrush/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/warning"
 )
 
 // Sentinel errors that can appear when falling back to UnknownStep.

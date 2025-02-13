@@ -3,7 +3,7 @@ package pipeline
 import (
 	"testing"
 
-	"github.com/buildkite/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/ordered"
 	"github.com/google/go-cmp/cmp"
 )
 

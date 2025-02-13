@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/buildkite/go-pipeline"
-	"github.com/buildkite/go-pipeline/jwkutil"
+	"github.com/toothbrush/go-pipeline"
+	"github.com/toothbrush/go-pipeline/jwkutil"
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 )

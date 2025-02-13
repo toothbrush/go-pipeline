@@ -1,4 +1,4 @@
-module github.com/buildkite/go-pipeline
+module github.com/toothbrush/go-pipeline
 
 go 1.22.6
 

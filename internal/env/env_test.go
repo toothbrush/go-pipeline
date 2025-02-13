@@ -4,7 +4,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/buildkite/go-pipeline/internal/env"
+	"github.com/toothbrush/go-pipeline/internal/env"
 )
 
 func TestEnvCaseSensitive(t *testing.T) {

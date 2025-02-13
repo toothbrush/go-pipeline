@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/buildkite/go-pipeline"
+	"github.com/toothbrush/go-pipeline"
 )
 
 var _ SignedFielder = (*CommandStepWithInvariants)(nil)

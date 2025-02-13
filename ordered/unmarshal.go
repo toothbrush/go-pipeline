@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/buildkite/go-pipeline/warning"
+	"github.com/toothbrush/go-pipeline/warning"
 
 	"gopkg.in/yaml.v3"
 )

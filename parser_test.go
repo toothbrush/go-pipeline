@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/buildkite/go-pipeline/internal/env"
-	"github.com/buildkite/go-pipeline/ordered"
-	"github.com/buildkite/go-pipeline/warning"
+	"github.com/toothbrush/go-pipeline/internal/env"
+	"github.com/toothbrush/go-pipeline/ordered"
+	"github.com/toothbrush/go-pipeline/warning"
 	"github.com/google/go-cmp/cmp"
 	"gopkg.in/yaml.v3"
 )

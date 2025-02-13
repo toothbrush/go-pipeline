@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/buildkite/go-pipeline/warning"
+	"github.com/toothbrush/go-pipeline/warning"
 	"github.com/google/go-cmp/cmp"
 	"gopkg.in/yaml.v3"
 )
