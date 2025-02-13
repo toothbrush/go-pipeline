@@ -10,11 +10,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/toothbrush/go-pipeline"
 	"github.com/gowebpki/jcs"
 	"github.com/lestrrat-go/jwx/v2/jwa"
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/lestrrat-go/jwx/v2/jws"
+	"github.com/toothbrush/go-pipeline"
 )
 
 // EnvNamespacePrefix is the string that prefixes all fields in the "env"
@@ -143,9 +143,9 @@ func Sign(_ context.Context, key Key, sf SignedFielder, opts ...Option) (*pipeli
 		panic(fmt.Sprintf("unsupported key type: %T", key)) // should never happen
 	}
 
-	if options.debugSigning {
-		debug(options.logger, "Signed Step: %s checksum: %x", payload, sha256.Sum256(payload))
-	}
+	// if options.debugSigning {
+	debug(options.logger, "Signed Step: %s checksum: %x", payload, sha256.Sum256(payload))
+	// }
 
 	sig, err := jws.Sign(nil,
 		jws.WithKey(key.Algorithm(), key),
@@ -166,12 +166,15 @@ func Sign(_ context.Context, key Key, sf SignedFielder, opts ...Option) (*pipeli
 // Verify verifies an existing signature against environment (env) combined with
 // the keyset. The keySet can be a jwk.Set or a crypto.Signer. If it is a jwk.Set,
 // the public key thumbprints are logged.
+//
+// I will hack a bunch of debug output in here.
 func Verify(ctx context.Context, s *pipeline.Signature, keySet any, sf SignedFielder, opts ...Option) error {
 	options := configureOptions(opts...)
 
 	if len(s.SignedFields) == 0 {
 		return errors.New("signature covers no fields")
 	}
+	fmt.Printf("\"we have signed fields\": %v\n", "we have signed fields")
 
 	// Ask the object for values for all fields.
 	values, err := sf.ValuesForFields(s.SignedFields)
@@ -200,15 +203,17 @@ func Verify(ctx context.Context, s *pipeline.Signature, keySet any, sf SignedFie
 	if err != nil {
 		return fmt.Errorf("obtaining required keys: %w", err)
 	}
+	fmt.Printf("required: %v\n", required)
 
 	payload, err := canonicalPayload(s.Algorithm, required)
 	if err != nil {
 		return err
 	}
+	fmt.Printf("payload: %v\n", payload)
 
-	if options.debugSigning {
-		debug(options.logger, "Signed Step: %s checksum: %x", payload, sha256.Sum256(payload))
-	}
+	// if options.debugSigning {
+	debug(options.logger, "Signed Step: %s checksum: %x", payload, sha256.Sum256(payload))
+	// }
 
 	var keyOpt jws.VerifyOption
 	switch keySet := keySet.(type) {
